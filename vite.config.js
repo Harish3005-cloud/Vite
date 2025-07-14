@@ -6,4 +6,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  preview: {
+    host: '0.0.0.0',
+    port: 10000, // or leave this out to use $PORT
+    allowedHosts: ['vite-1-rbwo.onrender.com'],
+  },
 })
