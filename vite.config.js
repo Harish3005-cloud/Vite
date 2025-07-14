@@ -9,7 +9,7 @@ export default defineConfig({
   ],
   preview: {
     host: '0.0.0.0',
-    allowedHosts: 'all',
+    allowedHosts: ['vite-50a2.onrender.com'],
     // Do NOT set port here; Render will set it via --port $PORT in your start command
   },
 })
