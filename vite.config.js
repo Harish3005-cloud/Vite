@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+
 export default defineConfig({
   plugins: [
     react(),
@@ -8,13 +9,7 @@ export default defineConfig({
   ],
   preview: {
     host: '0.0.0.0',
-
     allowedHosts: 'all',
+    // Do NOT set port here; Render will set it via --port $PORT in your start command
   },
 })
-
-    port: 10000, // or leave this out to use $PORT
-    allowedHosts:  ['vite-1-rbwo.onrender.com'],
-  },
-})
-
