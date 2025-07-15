@@ -8,13 +8,7 @@ export default defineConfig({
   ],
   preview: {
     host: '0.0.0.0',
-<<<<<<< HEAD
+    port: 10000, // or leave this out to use $PORT
     allowedHosts: ['vite-50a2.onrender.com'],
   },
 })
-=======
-    port: 10000, // or leave this out to use $PORT
-    allowedHosts: 'all',
-  },
-})
->>>>>>> 57b04545a40f2e3b20aadb9a2964d77b185b01d0
