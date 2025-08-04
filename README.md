@@ -83,10 +83,10 @@ src/
 ## 📸 Screenshots
 
 <img src="Screenshot 2025-08-05 000203.png">
-<h2 style="text-align:center; font-family:san-serif">Front-Page</h2>
+<h2 style="text-align: center; ">Front-Page</h2>
 <br>
 <img src="Screenshot 2025-08-05 000250.png">
-<h2 style="text-align:center; font-family:san-serif">Contact-Section(Yet to be updated)</h2>
+<h2 style="text-align: center; ">Contact-Section(Yet to be updated)</h2>
 
 ## 🔧 Configuration
 
