@@ -82,8 +82,11 @@ src/
 
 ## 📸 Screenshots
 
-![Front-Page](Screenshot 2025-08-05 000203.png)
-![Contact-Section(Yet to be updated)](Screenshot 2025-08-05 000250.png)
+<img src="Screenshot 2025-08-05 000203.png">
+<h2 style="text-align:center; font-family:san-serif">Front-Page</h2>
+<br>
+<img src="Screenshot 2025-08-05 000250.png">
+<h2 style="text-align:center; font-family:san-serif">Contact-Section(Yet to be updated)</h2>
 
 ## 🔧 Configuration
 
