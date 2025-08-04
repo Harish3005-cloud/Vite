@@ -1,16 +1,125 @@
-<<<<<<< HEAD
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio website built with React and Three.js, featuring 3D animations, smooth transitions, and a responsive design.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - Modern React with hooks and functional components
+- **Vite** - Fast build tool and development server
+- **Three.js** - 3D graphics and animations
+- **GSAP** - Advanced animations and transitions
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Three Fiber** - React renderer for Three.js
+- **React Three Drei** - Useful helpers for React Three Fiber
+- **EmailJS** - Email functionality for contact forms
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Vite
->>>>>>> 26314ba3f99b6baacdc8e812cf7b98bda4d407f0
+1. **Clone the repository**
+   ```bash
+   git clone <your-repository-url>
+   cd vite-project
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🎨 Features
+
+- **3D Interactive Room** - Immersive 3D environment with interactive elements
+- **Smooth Animations** - GSAP-powered animations and transitions
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Contact Form** - EmailJS integration for contact functionality
+- **Tech Stack Showcase** - Interactive display of technologies and skills
+- **Experience Timeline** - Animated experience and project showcase
+- **Modern UI/UX** - Clean, modern design with excellent user experience
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable React components
+│   ├── Models/         # 3D model components
+│   └── ...
+├── sections/           # Main page sections
+├── HeroModels/         # 3D hero section models
+├── constants/          # Project constants and data
+└── ...
+```
+
+## 🎯 Key Components
+
+- **Hero Section** - 3D room with interactive elements
+- **Tech Stack** - Animated technology logos and descriptions
+- **Experience** - Timeline of work experience and projects
+- **Showcase** - Portfolio project gallery
+- **Contact** - Contact form with EmailJS integration
+
+## 🎨 Design Features
+
+- **3D Graphics** - Immersive Three.js 3D environment
+- **Smooth Transitions** - GSAP-powered animations
+- **Responsive Layout** - Mobile-friendly design
+- **Modern Typography** - Clean, readable fonts
+- **Interactive Elements** - Hover effects and animations
+
+## 📸 Screenshots
+
+[Add your project screenshots here]
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env` file in the root directory for EmailJS configuration:
+```env
+VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
+VITE_APP_EMAILJS_SERVICE_ID=your_service_id
+VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
+```
+
+## 🚀 Deployment
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to your preferred platform**
+   - Vercel, Netlify, GitHub Pages, etc.
+
+## 📝 License
+
+This project is open source and available under the [JS Mastery](LICENSE).
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+- **Email**: eharish3005@gmail.com
+- **LinkedIn**: www.linkedin.com/in/harish-e-naidu
+- **GitHub**: https://github.com/Harish3005-cloud
+
+
