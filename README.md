@@ -82,7 +82,8 @@ src/
 
 ## 📸 Screenshots
 
-[Add your project screenshots here]
+![Front-Page](Screenshot 2025-08-05 000203.png)
+![Contact-Section(Yet to be updated)](Screenshot 2025-08-05 000250.png)
 
 ## 🔧 Configuration
 
