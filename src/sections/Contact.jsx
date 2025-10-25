@@ -50,9 +50,10 @@ const Contact = () => {
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
               <form
-                ref={formRef}
+               
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
+                 ref={formRef}
               >
                 <div>
                   <label htmlFor="name">Your name</label>

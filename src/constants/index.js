@@ -29,8 +29,9 @@ export const words = [
   // Add more items as needed
 ];
 export const counterItems = [
-{value: 90, suffix: "+",label: "Total commits(2025)"},
-{value:14 ,suffix: "+"  ,label: "Repositeries"},
+{value:112, suffix: "+",label: "Total commits(2025)"},
+{value:23 ,suffix: "+"  ,label: "Repositeries"},
+{value:13, suffix:"+",label:"PUll-Requests"},
 {value:5 , suffix:"+",label:"Projects" },
 {value:7.98 ,  label:"CGPA"},
 ];
@@ -80,7 +81,7 @@ export const expCards = [
 
 },
 {review: "Teaches HTML, CSS, and JavaScript essentials.Focuses on responsive and modern web design.Covers layout techniques, animations, and interactivity.Hands-on with real-time UI building.Strengthens visual creativity and logic pairing.Foundation for frontend and full-stack paths."
-  , imgPath: "images/frontend.png",
+  , imgPath: "/images/frontend.png",
   title: "🌐 Front-End Development",
   date: "2025",
 },
@@ -107,7 +108,7 @@ export const expCards = [
 ];
 export const techStackIcons=[
 {
-  name: "React-Developer",
+  name: "eact-Developer",
   modelPath:"/images/React-logo.webp",
   scale:1,
   rotation:[0,0,0],
