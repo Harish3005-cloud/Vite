@@ -82,7 +82,15 @@ src/
 
 ## 📸 Screenshots
 
+<<<<<<< HEAD
 [Add your project screenshots here]
+=======
+<img src="Screenshot 2025-08-05 000203.png">
+<h2 style="text-align: center; ">Front-Page</h2>
+<br>
+<img src="Screenshot 2025-08-05 000250.png">
+<h2 style="text-align: center; ">Contact-Section(Yet to be updated)</h2>
+>>>>>>> 7d6835fffaa34f9c956e29978c3768fa580ef2bc
 
 ## 🔧 Configuration
 
