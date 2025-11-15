@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx';
 // Initialize EmailJS with error handling
 try {
-  const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+  const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY || "ttVhgY3mgisyJMrxv";
   if (!publicKey) {
     throw new Error('EmailJS public key is not defined in environment variables');
   }

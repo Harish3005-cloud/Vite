@@ -1,0 +1,36 @@
+import React from "react";
+import { useGLTF } from "@react-three/drei";
+
+export function Room(props) {
+  const { nodes, materials } = useGLTF("/models/optimized-room.glb");
+  
+  return (
+    <group {...props} dispose={null}>
+      <mesh geometry={nodes.body1_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.cabin_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.chair_body_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.comp_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.handls_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.keyboard_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.kovrik_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.lamp_bl_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.lamp_white_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.miuse_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.monitor2_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.monitor3_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.pCylinder5_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.polySurface53_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.table_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.tablet_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.triangle_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.vac_black_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.vacuum1_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.vacuumgrey_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.vires_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.window_blinn1_0.geometry} material={materials.blinn1} />
+      <mesh geometry={nodes.window4_phong1_0.geometry} material={materials.phong1} />
+    </group>
+  );
+}
+
+useGLTF.preload("/models/optimized-room.glb");
