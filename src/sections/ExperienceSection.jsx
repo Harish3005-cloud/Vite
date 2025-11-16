@@ -35,10 +35,14 @@ const ExperienceSection = () => {
             <div key={card.title} className="exp-card-wrapper">
             <div className="xl:w-2/6">
              <GlowCard card={card} index={index}>
-              <div>
-                <img src={card.imgPath} />
+              
+              
+                  <div>
+                    <img src={card.imgPath} alt={card.title || "Card image"} />
+                  </div>
+                  
                 
-              </div>
+             
              </GlowCard>
             </div>
             <div className="xl:w-4/6">
@@ -56,6 +60,12 @@ const ExperienceSection = () => {
                  <p className="my-5 text-white-50">📅{card.date}</p>
                  <p className="tex-{#839cd5} italic">Description</p>
                  <p className="text-white-50 text-lg justify-center flex flex-col">{card.review}</p>
+                  {(card.src || card.Link) && (
+                    <>
+                      <p className="tex-{#839cd5} italic">Link :</p>
+                      <a href={card.src || card.Link} target="_blank" rel="noopener noreferrer" className="text-white-50 text-lg justify-center flex flex-col">Check it out </a>
+                    </>
+                  )}
               </div>
             </div>
             </div>

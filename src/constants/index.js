@@ -71,6 +71,7 @@ export const expCards = [
 },
 {review :"Built for NMIT Hackathon using Python + FastAPI.Integrates APIs like YouTube, weather, crypto, EV stations.Generates AI images and handles diverse queries.Designed as an all-in-one multi-tool assistant.Focuses on real-world problem-solving use cases.Team collaboration under tight deadlines.",
   imgPath: "/images/Omni-Bot.png",
+  src:"https://nmit-hackathon.vercel.app/",
   title: "🤖 OmniBot – NMIT Hackathon Project",
   date: "MAR-3, 2024",
 },
@@ -87,11 +88,13 @@ export const expCards = [
 },
 {review :"Python-based desktop voice assistant.Responds to voice commands via SpeechRecognition.Performs tasks like app launching and speaking answers.Mimics Iron Man's Jarvis with custom responses.Uses automation and voice input for productivity.Blends AI tools with user convenience."  
   ,title: " 🧠 JARVIS-Voice Assistant",
+  src:"https://github.com/Harish3005-cloud/jarvis",
   imgPath: "/images/jarvis.png",
   date: "FEB-3,2025",
 },
 {review: "A responsive clone of the Flappy Bird game.Built with HTML, CSS, and JavaScript.Includes scoring, obstacles, and physics-based motion.Mobile-friendly interface for smooth gameplay.Tests logic building and event handling in JS.Fun project demonstrating front-end game design.",
   title: "🕹️ Flappy Bird Clone",
+  src:"https://flappy-bird-murex-zeta.vercel.app/",
   imgPath: "/images/Flappy- Bird.png",
   date: "FEB-7,2025",
 
@@ -108,7 +111,7 @@ export const expCards = [
 ];
 export const techStackIcons=[
 {
-  name: "eact-Developer",
+  name: "React-Developer",
   modelPath:"/images/React-logo.webp",
   scale:1,
   rotation:[0,0,0],
@@ -145,11 +148,11 @@ export const socialImgs = [
   //   url: "https://www.facebook.com/",
   //   imgPath: "/images/fb.png",
   // },
-  // {
-  //   name: "Git-Hub",
-  //   url: "https://github.com/Harish3005-cloud",
-  //   imgPath: "/images/github.webp",
-  // },
+   {
+     name: "Git-Hub",
+     url: "https://github.com/Harish3005-cloud",
+     imgPath: "/images/github1.png",
+   },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/harish-e-naidu/ ",
