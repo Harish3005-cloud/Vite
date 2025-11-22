@@ -1,9 +1,11 @@
 import { words } from '../constants/index.js'
 import Button from '../components/button.jsx' 
-import HeroExperience from '../HeroModels/HeroExperience.jsx'
 import Animatedcounter from '../components/animatedcounter.jsx'
+import { Suspense, lazy } from 'react'
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
+
+const HeroExperience = lazy(() => import('../HeroModels/HeroExperience.jsx'))
 
 const Hero = () => {
   useGSAP(() => {
@@ -67,7 +69,9 @@ gsap.fromTo('.hero-text h1',
   {/*right:Hero Content(3D-Model)*/}
   <figure >
     <div className="hero-3d-layout">
+        <Suspense fallback={<div className="text-white-50">Loading 3D...</div>}>
         <HeroExperience  />
+        </Suspense>
 
     </div>
 
