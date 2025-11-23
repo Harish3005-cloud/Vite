@@ -18,7 +18,7 @@ const App = () => {
    <Hero />  
    <ShowcaseSection/> 
    </Suspense>
-   <LogoSection/>
+   {/* <LogoSection/> */}
    <FeatureCards/>
    <Suspense fallback={<div className="text-white-50">Loading...</div>}>
    <ExperienceSection/>

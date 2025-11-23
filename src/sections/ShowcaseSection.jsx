@@ -55,13 +55,24 @@ projects.forEach((card,index)=>{
                 <div className="first-project-wrapper" ref={project1Ref}>
                     
                 <div className="image-wrapper ">
-                    <img src="/images/Flappy- Bird.png" alt="game" />
+                    <img src="/images/CampusConnect .png" alt="game" />
                 </div>
                 <div className="text-content">
-                    <h2>Flappy-Bird : A 2D Game </h2>
-                    <p className="text-white-50 md:text-xl">Flappy Bird is a simple yet addictive side-scrolling game 
-                      where players tap to navigate a bird through gaps between pipes without crashing.
-                      Its minimal design and challenging gameplay make it a fun and engaging experience.
+                    <h2>CampusConnect : Your College Your Network </h2>
+                    <p className="text-white-50 md:text-xl">
+                    A MERN-Stack Student Collaboration Platform
+                    Designed to solve the issue of fragmented campus communication, CampusConnect is a responsive web app that centralizes events, notes, and networking.
+                    Built with React and Node.js, 
+                    it features real-time chat and resource sharing, fostering a stronger academic community.
+                     
+                     <a
+                        href="https://mini-project-steel-six.vercel.app/"
+                        className="text-[#9bb5ff] underline font-semibold ml-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                      </a>
                      </p>
 
                     
@@ -71,15 +82,39 @@ projects.forEach((card,index)=>{
                 <div className="project-list-wrapper overflow-hidden">
                 <div className="project" ref={project2Ref}>
                     <div className='image-wrapper bg-[#ffefdb]'>
-                        <img src="/images/Amazon.png" alt="Amazon-Clone" />
+                        <img src="/images/Virtual-bookshelf.png" alt="Virtual-Bookshelf" />
                     </div>
-                    <h2>AMAZON-CLONE</h2>
+                    <h2>Virtual Bookshelf : For Book Lovers </h2>
+                    <p className="text-white-50 md:text-xl">
+                   
+                     
+                     <a
+                        href="https://virtual-bookshlef.vercel.app/"
+                        className="text-[#9bb5ff] underline font-semibold ml-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                          </a>
+                     </p>
                 </div>
                  <div className="project" ref={project3Ref}>
                     <div className='image-wrapper bg-[#ffe7eb]'>
-                        <img src="/images/Spotify.png" alt="Spotify-Clone" />
+                        <img src="/images/Omni-Bot.png" alt="Spotify-Clone" />
                     </div>
-                    <h2>SPOTIFY-CLONE (Responsive)</h2>
+                    <h2>OmniBot : NMHIT Hackathon Runner-UP</h2>
+                          <p className="text-white-50 md:text-xl">
+                   
+                     
+                     <a
+                        href="https://nmit-hackathon.vercel.app/"
+                        className="text-[#9bb5ff] underline font-semibold ml-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo
+                          </a>
+                     </p>
                 </div>
                 </div>
             </div>

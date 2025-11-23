@@ -59,6 +59,12 @@ export const abilities=[
   },
 ];
 export const expCards = [
+  {
+    imgPath:"/images/NPTEL.png",
+    title:"NPTEL",
+    review:"Awarded 'Elite' Certification by IIT Madras (NPTEL) for Python for Data Science with a consolidated score of 75%. This rigorous curriculum moved beyond basic syntax to cover the core Python data stack, specifically Pandas, NumPy, and Matplotlib. By mastering these libraries, I learned how to efficiently clean raw data, perform vectorised operations, and generate insightful visualizations, establishing a strong foundation for building machine learning models and handling real-world datasets.",
+    date:"2025",
+  },
 { review: "Covers OOP, exception handling, and Java APIs.Strengthens real-world programming capabilities.Focus on modular and reusable Java code.Emphasis on best practices and structure.Includes small project-based learning tasks.Enhances backend development proficiency.",
   imgPath: "/images/programming in java.png",
   title: "☕ Programming in Java",
@@ -108,35 +114,44 @@ export const expCards = [
 
 
 
-];
-export const techStackIcons=[
-{
-  name: "React-Developer",
-  modelPath:"/images/React-logo.webp",
-  scale:1,
-  rotation:[0,0,0],
-},
-{
- name:" Java Developer",
- modelPath:"/images/java.png",
- scale:0.8,
- rotation:[0,0,0],
 
-},
-{
-  name:"Front-End Development",
-  modelPath:"/images/Html.png",
-  scale:5,
-  rotation:[0,0,0],
-},
-{
-  name:"UI/UX Enthusiast",
-  scale:0.05,
-   modelPath:"/images/Figma-logo.webp",
-  rotation:[0,0,0],
-  
-},
 ];
+export const techStackImgs = [
+  {
+    name: "Java Developer",
+    imgPath: "/images/logos/Java_Logo.svg.png",
+   
+  }
+  
+];
+ export const techStackIcons = [
+  {
+    name: "React Developer",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+
+  {
+    name: "Backend Developer",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: "Interactive Developer",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Project Manager",
+    modelPath: "/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
+  },
+];
+
 export const socialImgs = [
   {
     name: "insta",
