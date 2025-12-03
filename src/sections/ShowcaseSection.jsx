@@ -66,7 +66,7 @@ projects.forEach((card,index)=>{
                     it features real-time chat and resource sharing, fostering a stronger academic community.
                      
                      <a
-                        href="https://mini-project-steel-six.vercel.app/"
+                        href="https://campus-connect-302517.vercel.app/"
                         className="text-[#9bb5ff] underline font-semibold ml-2"
                         target="_blank"
                         rel="noopener noreferrer"
