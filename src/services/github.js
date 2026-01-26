@@ -1,17 +1,26 @@
-import axios from 'axios';
-
 const GITHUB_API_BASE_URL = 'https://api.github.com';
 const USERNAME = 'Harish3005-cloud';
 
 export const fetchGitHubStats = async () => {
   try {
-    const [userResponse, reposResponse] = await Promise.all([
-      axios.get(`${GITHUB_API_BASE_URL}/users/${USERNAME}`),
-      axios.get(`${GITHUB_API_BASE_URL}/users/${USERNAME}/repos?per_page=100`)
-    ]);
+    const fetchJson = async (url) => {
+      const res = await fetch(url, {
+        headers: {
+          Accept: 'application/vnd.github+json',
+        },
+      });
 
-    const userData = userResponse.data;
-    const repos = reposResponse.data;
+      if (!res.ok) {
+        throw new Error(`GitHub API request failed: ${res.status} ${res.statusText}`);
+      }
+
+      return res.json();
+    };
+
+    const [userData, repos] = await Promise.all([
+      fetchJson(`${GITHUB_API_BASE_URL}/users/${USERNAME}`),
+      fetchJson(`${GITHUB_API_BASE_URL}/users/${USERNAME}/repos?per_page=100`),
+    ]);
 
     // Get events for commit counting
     let allEvents = [];
@@ -19,11 +28,11 @@ export const fetchGitHubStats = async () => {
     let hasMore = true;
     
     while (hasMore && page <= 3) { // Limit to first 3 pages to avoid rate limiting
-      const eventsResponse = await axios.get(`${GITHUB_API_BASE_URL}/users/${USERNAME}/events?page=${page}&per_page=100`);
-      if (eventsResponse.data.length === 0) {
+      const events = await fetchJson(`${GITHUB_API_BASE_URL}/users/${USERNAME}/events?page=${page}&per_page=100`);
+      if (events.length === 0) {
         hasMore = false;
       } else {
-        allEvents = allEvents.concat(eventsResponse.data);
+        allEvents = allEvents.concat(events);
         page++;
       }
     }
