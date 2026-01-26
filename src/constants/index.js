@@ -18,6 +18,7 @@ link: "#experience",
   // },
 
 ];
+
 export const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -28,13 +29,28 @@ export const words = [
 
   // Add more items as needed
 ];
-export const counterItems = [
-{value:112, suffix: "+",label: "Total commits(2025)"},
-{value:23 ,suffix: "+"  ,label: "Repositeries"},
-{value:13, suffix:"+",label:"PUll-Requests"},
-{value:5 , suffix:"+",label:"Projects" },
-{value:7.98 ,  label:"CGPA"},
-];
+
+export const getCounterItems = (githubStats = {}) => {
+  const currentYear = new Date().getFullYear();
+  const {
+    commits = 112,
+    repositories = 23,
+    pullRequests = 13,
+    projects = 5
+  } = githubStats;
+
+  return [
+    {value: commits, suffix: "+", label: `Total commits(${currentYear})`},
+    {value: repositories, suffix: "+", label: "Repositories"},
+    {value: pullRequests, suffix: "+", label: "Pull-Requests"},
+    {value: projects, suffix: "+", label: "Projects"},
+    {value: 7.98, label: "CGPA"},
+  ];
+};
+
+// Fallback data for initial load
+export const counterItems = getCounterItems();
+
 export const logoIconList = [
 {imgPath: "/images/logos/company-logo-1.png"},
 {imgPath: "/images/logos/company-logo-2.png"},
@@ -58,7 +74,43 @@ export const abilities=[
     desc:"Turning raw data into meaningful insights and clear visuals.Skilled in Python, Pandas, Matplotlib, and SQL, I analyze datasets and present them in intuitive formats. From Excel reports to Python visualizations, I transform information into actionable stories for smarter decision-making."
   },
 ];
+
 export const expCards = [
+  { imgPath: "/images/numpy.png",
+    title: "🐍 NumPy Contributions",
+    desc: "Codebase Maintenance: Removed obsolete Doxygen configuration tags (MAINT), streamlining the documentation build process and reducing legacy configuration debt. [Link to PR #30550]",
+    src: "https://github.com/numpy/numpy/pull/30550",
+    date:"2026",
+    
+  },
+  { imgPath: "/images/numpy.png",
+    title: "🐍 NumPy Contributions",
+    desc: "CI/CD Pipeline Optimization: Diagnosed and resolved a critical 'hanging job' issue in macOS GitHub Actions runners. Migrated workflows to macos-13 and implemented libmamba for faster dependency solving, significantly reducing test timeouts.",
+    src: "https://github.com/numpy/numpy/pull/30724",
+    date:"2026",
+    
+  },
+  { imgPath: "/images/MDN-logo.jpg",
+    title: "🌐 MDN Contributions",
+    desc: "WebGL Specification Alignment: Updated bufferSubData documentation to enforce the srcData parameter requirement, aligning the docs with the strict WebGL 1 specification and preventing implementation errors. [Link to PR #42411]",
+    src: "https://github.com/mdn/content/pull/42411",
+    date:"2026",
+    
+  },
+  { imgPath: "/images/MDN-logo.jpg",
+    title: "🌐 MDN Contributions",
+    desc: "HTTP Standards Accuracy: Corrected syntax documentation for the HTTP Prefer header to properly support list values, ensuring accurate reference material for web developers. [Link to PR #42575]",
+    src: "https://github.com/mdn/content/pull/42575",
+    date:"2026",    
+  },
+  { imgPath: "/images/MDN-logo.jpg",
+    title: "🌐 MDN Contributions",
+    desc: "Site Maintenance: Resolved broken redirects in the Glossary, improving site navigation and SEO health. [Link to PR #42576]",
+    src: "https://github.com/mdn/content/pull/42576",
+    date:"2026",    
+  },
+  
+
   {
     imgPath:"/images/NPTEL.png",
     title:"NPTEL",

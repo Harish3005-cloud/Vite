@@ -38,7 +38,13 @@ const ExperienceSection = () => {
               
               
                   <div>
-                    <img src={card.imgPath} alt={card.title || "Card image"} />
+                    <img 
+                      src={card.imgPath} 
+                      alt={card.title || "Card image"} 
+                      className={`${
+                        card.title?.includes('MDN') ? 'h-16 w-auto object-contain' : 'w-full h-auto'
+                      }`}
+                    />
                   </div>
                   
                 
@@ -59,7 +65,7 @@ const ExperienceSection = () => {
                  <h1 className="font-semibold text-3xl">{card.title}</h1> 
                  <p className="my-5 text-white-50">📅{card.date}</p>
                  <p className="tex-{#839cd5} italic">Description</p>
-                 <p className="text-white-50 text-lg justify-center flex flex-col">{card.review}</p>
+                 <p className="text-white-50 text-lg justify-center flex flex-col">{card.review || card.desc}</p>
                   {(card.src || card.Link) && (
                     <>
                       <p className="tex-{#839cd5} italic">Link :</p>
