@@ -30,11 +30,18 @@ const NavBar = () => {
         </ul>
 
       </nav>
-      <a href="#contact" className="contact-btn group">
-      <div className="inner">
-        <span>Contact Me</span>
-       </div>
-      </a>
+      <div className="nav-buttons">
+        <a href="#contact" className="contact-btn group">
+          <div className="inner">
+            <span>Contact Me</span>
+          </div>
+        </a>
+        <a href="/Resume/hari-3004pdf.pdf" target="_blank" rel="noopener noreferrer" className="contact-btn group">
+          <div className="inner">
+            <span>Resume</span>
+          </div>
+        </a>
+      </div>
        
       </div>
     </header>
