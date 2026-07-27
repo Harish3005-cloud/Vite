@@ -55,18 +55,16 @@ projects.forEach((card,index)=>{
                 <div className="first-project-wrapper" ref={project1Ref}>
                     
                 <div className="image-wrapper ">
-                    <img src="/images/CampusConnect .png" alt="game" />
+                    <img src="/images/Taskpulse.png" alt="game" />
                 </div>
                 <div className="text-content">
-                    <h2>CampusConnect : Your College Your Network </h2>
+                    <h2>Taskpulse : Your AI-Powered Productivity Hub</h2>
                     <p className="text-white-50 md:text-xl">
-                    A MERN-Stack Student Collaboration Platform
-                    Designed to solve the issue of fragmented campus communication, CampusConnect is a responsive web app that centralizes events, notes, and networking.
-                    Built with React and Node.js, 
-                    it features real-time chat and resource sharing, fostering a stronger academic community.
+                    Introducing TaskPulse – A Project That Started as Curiosity and Became My Learning Playground
+                    
                      
                      <a
-                        href="https://campus-connect-302517.vercel.app/"
+                        href="https://taskpulse-sandy.vercel.app/"
                         className="text-[#9bb5ff] underline font-semibold ml-2"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -82,14 +80,14 @@ projects.forEach((card,index)=>{
                 <div className="project-list-wrapper overflow-hidden">
                 <div className="project" ref={project2Ref}>
                     <div className='image-wrapper bg-[#ffefdb]'>
-                        <img src="/images/Virtual-bookshelf.png" alt="Virtual-Bookshelf" />
+                        <img src="/images/CampusConnect .png" alt="Virtual-Bookshelf" />
                     </div>
-                    <h2>Virtual Bookshelf : For Book Lovers </h2>
+                    <h2>Campus Connect :A MERN-Stack Student Collaboration Platform</h2>
                     <p className="text-white-50 md:text-xl">
                    
                      
                      <a
-                        href="https://virtual-bookshlef.vercel.app/"
+                        href="https://campus-connect-302517.vercel.app/"
                         className="text-[#9bb5ff] underline font-semibold ml-2"
                         target="_blank"
                         rel="noopener noreferrer"
