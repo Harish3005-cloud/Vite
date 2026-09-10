@@ -36,7 +36,7 @@ const NavBar = () => {
             <span>Contact Me</span>
           </div>
         </a>
-        <a href="/Resume/Hari_1_Resume.pdf" target="_blank" rel="noopener noreferrer" className="contact-btn group">
+        <a href="/Resume/Hari_2_Resume.pdf" target="_blank" rel="noopener noreferrer" className="contact-btn group">
           <div className="inner">
             <span>Resume</span>
           </div>
