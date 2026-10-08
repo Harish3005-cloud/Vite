@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import { RectAreaLight } from 'three';
 
 const HeroLights = () => {
   return (
@@ -29,13 +29,13 @@ const HeroLights = () => {
         color="#9d4edd"
         
       />
-      <primitive 
-        object={new THREE.RectAreaLight('#A259ff',8,3,2)}
+      <primitive
+        object={new RectAreaLight('#A259ff',8,3,2)}
         position={[4,1,-1]} // Adjust to match your lamp's position
         intensity={10}
         rotation={[-Math.PI / 4, Math.PI/4, 0]} // Adjust rotation to
-      
-      
+
+
       /> 
       <pointLight
         position={[0, 1, 0]} // Adjust to match your lamp's position

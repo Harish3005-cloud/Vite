@@ -55,7 +55,7 @@ projects.forEach((card,index)=>{
                 <div className="first-project-wrapper" ref={project1Ref}>
                     
                 <div className="image-wrapper ">
-                    <img src="/images/Taskpulse.png" alt="game" />
+                    <img src="/images/Taskpulse.webp" alt="game" loading="lazy" />
                 </div>
                 <div className="text-content">
                     <h2>Taskpulse : Your AI-Powered Productivity Hub</h2>
@@ -80,14 +80,14 @@ projects.forEach((card,index)=>{
                 <div className="project-list-wrapper overflow-hidden">
                 <div className="project" ref={project2Ref}>
                     <div className='image-wrapper bg-[#ffefdb]'>
-                        <img src="/images/CampusConnect .png" alt="Virtual-Bookshelf" />
+                        <img src="/images/Alex.png" alt="Virtual-Bookshelf" loading="lazy" />
                     </div>
-                    <h2>Campus Connect :A MERN-Stack Student Collaboration Platform</h2>
+                    <h2>Alex Chat : Your Friendly AI Study Partner</h2>
                     <p className="text-white-50 md:text-xl">
                    
                      
                      <a
-                        href="https://campus-connect-302517.vercel.app/"
+                        href="https://alex-7676.vercel.app/"
                         className="text-[#9bb5ff] underline font-semibold ml-2"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -98,7 +98,7 @@ projects.forEach((card,index)=>{
                 </div>
                  <div className="project" ref={project3Ref}>
                     <div className='image-wrapper bg-[#ffe7eb]'>
-                        <img src="/images/Omni-Bot.png" alt="Spotify-Clone" />
+                        <img src="/images/Omni-Bot.webp" alt="Spotify-Clone" loading="lazy" />
                     </div>
                     <h2>OmniBot : NMHIT Hackathon Runner-UP</h2>
                           <p className="text-white-50 md:text-xl">

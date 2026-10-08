@@ -4,9 +4,9 @@ export const navLinks = [
     link: "#work",
 
   },
-{
-name: "Experience",
-link: "#experience",
+  {
+    name: "Experience",
+    link: "#experience",
   },
   {
     name: "Skills",
@@ -23,8 +23,8 @@ export const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
   { text: "Design", imgPath: "/images/designs.svg" },
-  
-{ text: "Code", imgPath: "/images/code.svg" }, 
+
+  { text: "Code", imgPath: "/images/code.svg" },
 
 
   // Add more items as needed
@@ -40,11 +40,11 @@ export const getCounterItems = (githubStats = {}) => {
   } = githubStats;
 
   return [
-    {value: commits, suffix: "+", label: `Total commits(${currentYear})`},
-    {value: repositories, suffix: "+", label: "Repositories"},
-    {value: pullRequests, suffix: "+", label: "Pull-Requests"},
-    {value: projects, suffix: "+", label: "Projects"},
-    {value: 7.98, label: "CGPA"},
+    { value: commits, suffix: "+", label: `Total commits(${currentYear})` },
+    { value: repositories, suffix: "+", label: "Repositories" },
+    { value: pullRequests, suffix: "+", label: "Pull-Requests" },
+    { value: projects, suffix: "+", label: "Projects" },
+    { value: 7.98, label: "CGPA" },
   ];
 };
 
@@ -52,116 +52,121 @@ export const getCounterItems = (githubStats = {}) => {
 export const counterItems = getCounterItems();
 
 export const logoIconList = [
-{imgPath: "/images/logos/company-logo-1.png"},
-{imgPath: "/images/logos/company-logo-2.png"},
-{imgPath: "/images/logos/company-logo-3.png"},
-{imgPath: "/images/logos/company-logo-4.png"},
-{imgPath: "/images/logos/company-logo-5.png"},
-{imgPath: "/images/logos/company-logo-6.png"},
-{imgPath: "/images/logos/company-logo-7.png"},
-{imgPath: "/images/logos/company-logo-8.png"},
-{imgPath: "/images/logos/company-logo-9.png"},
-{imgPath: "/images/logos/company-logo-10.png"},
-{imgPath: "/images/logos/company-logo-11.png"},
+  { imgPath: "/images/logos/company-logo-1.png" },
+  { imgPath: "/images/logos/company-logo-2.png" },
+  { imgPath: "/images/logos/company-logo-3.png" },
+  { imgPath: "/images/logos/company-logo-4.png" },
+  { imgPath: "/images/logos/company-logo-5.png" },
+  { imgPath: "/images/logos/company-logo-6.png" },
+  { imgPath: "/images/logos/company-logo-7.png" },
+  { imgPath: "/images/logos/company-logo-8.png" },
+  { imgPath: "/images/logos/company-logo-9.png" },
+  { imgPath: "/images/logos/company-logo-10.png" },
+  { imgPath: "/images/logos/company-logo-11.png" },
 ];
-export const abilities=[
-  {title: "💡 Full-Stack Web Development",
-  desc: "Bringing ideas to life through seamless front-end and back-end integration.From designing responsive interfaces with HTML, CSS, and JavaScript to building dynamic applications with PHP and MySQL, I develop complete web solutions. My projects—like Amazon and Spotify clones—showcase real-world user experience and functionality."},
-  {title:"🧠 Problem Solving with DSA",
-    desc:"Tackling complex problems using efficient data structures and algorithms.With a strong grasp of DSA in Java, I approach challenges with logical thinking and structured solutions. Whether optimizing performance or building interactive applications like Flappy Bird, I prioritize clean, efficient code."
+export const abilities = [
+  {
+    title: "💡 Full-Stack Web Development",
+    desc: "Bringing ideas to life through seamless front-end and back-end integration.From designing responsive interfaces with HTML, CSS, and JavaScript to building dynamic applications with PHP and MySQL, I develop complete web solutions. My projects—like Amazon and Spotify clones—showcase real-world user experience and functionality."
   },
-  {title:"📊 Data Analysis & Visualization",
-    desc:"Turning raw data into meaningful insights and clear visuals.Skilled in Python, Pandas, Matplotlib, and SQL, I analyze datasets and present them in intuitive formats. From Excel reports to Python visualizations, I transform information into actionable stories for smarter decision-making."
+  {
+    title: "🧠 Problem Solving with DSA",
+    desc: "Tackling complex problems using efficient data structures and algorithms.With a strong grasp of DSA in Java, I approach challenges with logical thinking and structured solutions. Whether optimizing performance or building interactive applications like Flappy Bird, I prioritize clean, efficient code."
+  },
+  {
+    title: "📊 Data Analysis & Visualization",
+    desc: "Turning raw data into meaningful insights and clear visuals.Skilled in Python, Pandas, Matplotlib, and SQL, I analyze datasets and present them in intuitive formats. From Excel reports to Python visualizations, I transform information into actionable stories for smarter decision-making."
   },
 ];
 
 export const expCards = [
-  { imgPath: "/images/numpy.png",
+  {
+    id: 1, imgPath: "/images/numpy.webp",
     title: "🐍 NumPy Contributions",
     desc: "Codebase Maintenance: Removed obsolete Doxygen configuration tags (MAINT), streamlining the documentation build process and reducing legacy configuration debt. [Link to PR #30550]",
     src: "https://github.com/numpy/numpy/pull/30550",
-    date:"2026",
-    
+    date: "2026",
+
   },
-  { imgPath: "/images/numpy.png",
+  {
+    id: 2, imgPath: "/images/numpy.webp",
     title: "🐍 NumPy Contributions",
     desc: "CI/CD Pipeline Optimization: Diagnosed and resolved a critical 'hanging job' issue in macOS GitHub Actions runners. Migrated workflows to macos-13 and implemented libmamba for faster dependency solving, significantly reducing test timeouts.",
     src: "https://github.com/numpy/numpy/pull/30724",
-    date:"2026",
-    
+    date: "2026",
+
   },
-  { imgPath: "/images/MDN-logo.jpg",
+  {
+    id: 3, imgPath: "/images/MDN-logo.webp",
     title: "🌐 MDN Contributions",
     desc: "WebGL Specification Alignment: Updated bufferSubData documentation to enforce the srcData parameter requirement, aligning the docs with the strict WebGL 1 specification and preventing implementation errors. [Link to PR #42411]",
     src: "https://github.com/mdn/content/pull/42411",
-    date:"2026",
-    
+    date: "2026",
+
   },
-  { imgPath: "/images/MDN-logo.jpg",
+  {
+    id: 4, imgPath: "/images/MDN-logo.webp",
     title: "🌐 MDN Contributions",
     desc: "HTTP Standards Accuracy: Corrected syntax documentation for the HTTP Prefer header to properly support list values, ensuring accurate reference material for web developers. [Link to PR #42575]",
     src: "https://github.com/mdn/content/pull/42575",
-    date:"2026",    
+    date: "2026",
   },
-  { imgPath: "/images/MDN-logo.jpg",
+  {
+    id: 5, imgPath: "/images/MDN-logo.webp",
     title: "🌐 MDN Contributions",
     desc: "Site Maintenance: Resolved broken redirects in the Glossary, improving site navigation and SEO health. [Link to PR #42576]",
     src: "https://github.com/mdn/content/pull/42576",
-    date:"2026",    
+    date: "2026",
   },
-  
+
 
   {
-    imgPath:"/images/NPTEL.png",
-    title:"NPTEL",
-    review:"Awarded 'Elite' Certification by IIT Madras (NPTEL) for Python for Data Science with a consolidated score of 75%. This rigorous curriculum moved beyond basic syntax to cover the core Python data stack, specifically Pandas, NumPy, and Matplotlib. By mastering these libraries, I learned how to efficiently clean raw data, perform vectorised operations, and generate insightful visualizations, establishing a strong foundation for building machine learning models and handling real-world datasets.",
-    date:"2025",
+    id: 6,
+    imgPath: "/images/NPTEL.webp",
+    title: "NPTEL",
+    review: "Awarded 'Elite' Certification by IIT Madras (NPTEL) for Python for Data Science with a consolidated score of 75%. This rigorous curriculum moved beyond basic syntax to cover the core Python data stack, specifically Pandas, NumPy, and Matplotlib. By mastering these libraries, I learned how to efficiently clean raw data, perform vectorised operations, and generate insightful visualizations, establishing a strong foundation for building machine learning models and handling real-world datasets.",
+    date: "2025",
   },
-{ review: "The Deloitte Data Analytics Job Simulation on Forage is an excellent introductory program for aspiring data analysts. It provides hands-on experience through realistic business scenarios, allowing learners to apply data analysis techniques and understand how data is used to solve business problems. The course is well-structured, self-paced, and offers practical exposure to analytics and forensic technology concepts. While it is beginner-friendly and doesn't cover advanced technical topics in depth, it is a valuable addition to a resume and a great way to gain insight into the day-to-day work of a data analytics professional.",
-  imgPath: "/images/Deloitte.png",
-  title: "Data Analytics",
-  date: "2026",
-},
-{review: "Completed an in-depth course on Anthropic Claude, covering API integration, prompt engineering, RAG, MCP, tool use, and agentic AI workflows. The course provided practical experience in building scalable, production-ready AI applications using modern LLM engineering techniques.",
-  imgPath: "/images/Anthropic.png",
-  title: "Building with the Claude API",
-  date: "2026",
-},
-{review :"Built for NMIT Hackathon using Python + FastAPI.Integrates APIs like YouTube, weather, crypto, EV stations.Generates AI images and handles diverse queries.Designed as an all-in-one multi-tool assistant.Focuses on real-world problem-solving use cases.Team collaboration under tight deadlines.",
-  imgPath: "/images/Omni-Bot.png",
-  src:"https://nmit-hackathon.vercel.app/",
-  title: "🤖 OmniBot – NMIT Hackathon Project",
-  date: "MAR-3, 2024",
-},
-{review: "Issued by: Infosys Springboard Covers core C++ syntax, OOP principles, and logic-building techniques for software development.",
-  imgPath: "/images/c++.png",
-  title: "💻 Programming in C++",
-  date: "2025",
+  {
+    id: 7, review: "The Deloitte Data Analytics Job Simulation on Forage is an excellent introductory program for aspiring data analysts. It provides hands-on experience through realistic business scenarios, allowing learners to apply data analysis techniques and understand how data is used to solve business problems. The course is well-structured, self-paced, and offers practical exposure to analytics and forensic technology concepts. While it is beginner-friendly and doesn't cover advanced technical topics in depth, it is a valuable addition to a resume and a great way to gain insight into the day-to-day work of a data analytics professional.",
+    imgPath: "/images/Deloitte.webp",
+    title: "Data Analytics",
+    date: "2026",
+  },
+  {
+    id: 8, review: "Completed an in-depth course on Anthropic Claude, covering API integration, prompt engineering, RAG, MCP, tool use, and agentic AI workflows. The course provided practical experience in building scalable, production-ready AI applications using modern LLM engineering techniques.",
+    imgPath: "/images/Anthropic.webp",
+    title: "Building with the Claude API",
+    date: "2026",
+  },
+  {
+    id: 9, review: "Built for NMIT Hackathon using Python + FastAPI.Integrates APIs like YouTube, weather, crypto, EV stations.Generates AI images and handles diverse queries.Designed as an all-in-one multi-tool assistant.Focuses on real-world problem-solving use cases.Team collaboration under tight deadlines.",
+    imgPath: "/images/Omni-Bot.webp",
+    src: "https://nmit-hackathon.vercel.app/",
+    title: "🤖 OmniBot – NMIT Hackathon Project",
+    date: "MAR-3, 2024",
+  },
+  {
+    id: 10, review: "Issued by: Infosys Springboard Covers core C++ syntax, OOP principles, and logic-building techniques for software development.",
+    imgPath: "/images/c++.webp",
+    title: "💻 Programming in C++",
+    date: "2025",
 
-},
-{review: "Teaches HTML, CSS, and JavaScript essentials.Focuses on responsive and modern web design.Covers layout techniques, animations, and interactivity.Hands-on with real-time UI building.Strengthens visual creativity and logic pairing.Foundation for frontend and full-stack paths."
-  , imgPath: "/images/frontend.png",
-  title: "🌐 Front-End Development",
-  date: "2025",
-},
-{review :"Python-based desktop voice assistant.Responds to voice commands via SpeechRecognition.Performs tasks like app launching and speaking answers.Mimics Iron Man's Jarvis with custom responses.Uses automation and voice input for productivity.Blends AI tools with user convenience."  
-  ,title: " 🧠 JARVIS-Voice Assistant",
-  src:"https://github.com/Harish3005-cloud/jarvis",
-  imgPath: "/images/jarvis.png",
-  date: "FEB-3,2025",
-},
-{review: "A responsive clone of the Flappy Bird game.Built with HTML, CSS, and JavaScript.Includes scoring, obstacles, and physics-based motion.Mobile-friendly interface for smooth gameplay.Tests logic building and event handling in JS.Fun project demonstrating front-end game design.",
-  title: "🕹️ Flappy Bird Clone",
-  src:"https://flappy-bird-murex-zeta.vercel.app/",
-  imgPath: "/images/Flappy- Bird.png",
-  date: "FEB-7,2025",
+  },
+  {
+    id: 11, review: "IBM Coursera Certificate: Developing Back-End Apps with Node.js and Express Gained hands-on expertise in building RESTful APIs, implementing Express middleware, handling asynchronous operations, and structuring scalable server-side logic using Node.js — validated through practical projects including API development and error handling."
+    , imgPath: "/images/Coursera.png",
+    title: "🌐 Developing Back-End Apps with Node.js and Express",
+    date: "2025",
+  },
+  {
+    id: 12, review: "A responsive clone of the Flappy Bird game.Built with HTML, CSS, and JavaScript.Includes scoring, obstacles, and physics-based motion.Mobile-friendly interface for smooth gameplay.Tests logic building and event handling in JS.Fun project demonstrating front-end game design.",
+    title: "🕹️ Flappy Bird Clone",
+    src: "https://flappy-bird-murex-zeta.vercel.app/",
+    imgPath: "/images/Flappy- Bird.webp",
+    date: "FEB-7,2025",
 
-},
-{review: "A festive JavaScript game with fun graphics and smooth animation. Built for browser play and mobile responsiveness.",
-  title:"🎮 Santa Game",
-  imgPath: "/images/Santa.png",
-  date: "JUN-5,2025",
-},
+  },
 
 
 
@@ -172,11 +177,11 @@ export const techStackImgs = [
   {
     name: "Java Developer",
     imgPath: "/images/logos/Java_Logo.svg.png",
-   
+
   }
-  
+
 ];
- export const techStackIcons = [
+export const techStackIcons = [
   {
     name: "React Developer",
     modelPath: "/models/react_logo-transformed.glb",
@@ -208,21 +213,21 @@ export const socialImgs = [
   {
     name: "insta",
     url: "https://www.instagram.com/e.harish_308?igsh=MXg1ZjVsenVqZ3Br",
-    imgPath: "/images/insta.png",
+    imgPath: "/images/insta.webp",
   },
   // {
   //   name: "fb",
   //   url: "https://www.facebook.com/",
   //   imgPath: "/images/fb.png",
   // },
-   {
-     name: "Git-Hub",
-     url: "https://github.com/Harish3005-cloud",
-     imgPath: "/images/github1.png",
-   },
+  {
+    name: "Git-Hub",
+    url: "https://github.com/Harish3005-cloud",
+    imgPath: "/images/github.webp",
+  },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/harish-e-naidu/ ",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/images/linkedin.webp",
   },
 ];

@@ -1,7 +1,34 @@
 import { useState, useEffect } from 'react';
 import { getCounterItems } from '../constants/index.js';
 import { fetchGitHubStats } from '../services/github.js';
-import CountUp from 'react-countup';
+
+const NativeCounter = ({ end, suffix = "", duration = 2000 }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTimestamp = null;
+    let animationFrameId = null;
+
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      setCount(Math.floor(easeProgress * end));
+
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(step);
+      }
+    };
+
+    animationFrameId = requestAnimationFrame(step);
+
+    return () => {
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
+  }, [end, duration]);
+
+  return <>{count}{suffix}</>;
+};
 
 const AnimatedCounter = () => {
   const [counterItems, setCounterItems] = useState(getCounterItems());
@@ -31,7 +58,7 @@ const AnimatedCounter = () => {
             {loading ? (
               <span className="animate-pulse">...</span>
             ) : (
-              <CountUp suffix={item.suffix} end={item.value}/>
+              <NativeCounter suffix={item.suffix} end={item.value}/>
             )}
             </div> 
             <div className="text-white-50 text-lg">{item.label}</div> 

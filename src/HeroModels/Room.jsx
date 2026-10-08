@@ -1,10 +1,10 @@
-import React, { useRef, useMemo } from "react";
+import React, { useRef, useMemo, useEffect } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
-import * as THREE from "three";
+import { MeshPhongMaterial, MeshStandardMaterial } from "three";
 
-export function Room(props) {
+const Room = React.memo(function Room({ isMobile, ...props }) {
   const { nodes, materials } = useGLTF("/models/optimized-room.glb");
   const screensRef = useRef();
 
@@ -12,17 +12,19 @@ export function Room(props) {
   const matcapTexture = useTexture("/images/textures/mat1.png");
 
   // Memoize materials
-  const curtainMaterial = useMemo(() => new THREE.MeshPhongMaterial({ color: "#d90429" }), []);
-  const bodyMaterial = useMemo(() => new THREE.MeshPhongMaterial({ map: matcapTexture }), [matcapTexture]);
-  const tableMaterial = useMemo(() => new THREE.MeshPhongMaterial({ color: "#582f0e" }), []);
-  const radiatorMaterial = useMemo(() => new THREE.MeshPhongMaterial({ color: "#fff" }), []);
-  const compMaterial = useMemo(() => new THREE.MeshStandardMaterial({ color: "#fff" }), []);
-  const pillowMaterial = useMemo(() => new THREE.MeshPhongMaterial({ color: "#8338ec" }), []);
-  const chairMaterial = useMemo(() => new THREE.MeshPhongMaterial({ color: "#000" }), []);
+  const curtainMaterial = useMemo(() => new MeshPhongMaterial({ color: "#d90429" }), []);
+  const bodyMaterial = useMemo(() => new MeshPhongMaterial({ map: matcapTexture }), [matcapTexture]);
+  const tableMaterial = useMemo(() => new MeshPhongMaterial({ color: "#582f0e" }), []);
+  const radiatorMaterial = useMemo(() => new MeshPhongMaterial({ color: "#fff" }), []);
+  const compMaterial = useMemo(() => new MeshStandardMaterial({ color: "#fff" }), []);
+  const pillowMaterial = useMemo(() => new MeshPhongMaterial({ color: "#8338ec" }), []);
+  const chairMaterial = useMemo(() => new MeshPhongMaterial({ color: "#000" }), []);
+
+
 
   return (
     <group {...props} dispose={null}>
-      <EffectComposer>
+      <EffectComposer enabled={!isMobile}>
         <SelectiveBloom
           selection={screensRef}
           intensity={1.0} // Strength of the bloom
@@ -150,6 +152,8 @@ export function Room(props) {
       />
     </group>
   );
-}
+});
+
+export { Room };
 
 useGLTF.preload("/models/optimized-room.glb");
