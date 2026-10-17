@@ -1,7 +1,6 @@
 import React from 'react'
 import TitleHeader from '../components/TitleHeader.jsx'
 import { expCards } from '../constants/index.js'
-import { div } from 'three/tsl'
 import GlowCard from '../components/GlowCard.jsx'
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'

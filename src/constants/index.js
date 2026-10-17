@@ -146,13 +146,7 @@ export const expCards = [
     title: "🤖 OmniBot – NMIT Hackathon Project",
     date: "MAR-3, 2024",
   },
-  {
-    id: 10, review: "Issued by: Infosys Springboard Covers core C++ syntax, OOP principles, and logic-building techniques for software development.",
-    imgPath: "/images/c++.webp",
-    title: "💻 Programming in C++",
-    date: "2025",
 
-  },
   {
     id: 11, review: "IBM Coursera Certificate: Developing Back-End Apps with Node.js and Express Gained hands-on expertise in building RESTful APIs, implementing Express middleware, handling asynchronous operations, and structuring scalable server-side logic using Node.js — validated through practical projects including API development and error handling."
     , imgPath: "/images/Coursera.png",
@@ -181,6 +175,109 @@ export const techStackImgs = [
   }
 
 ];
+
+// Prominently featured core backend frameworks
+export const featuredFrameworks = [
+  {
+    name: 'FastAPI',
+    language: 'Python',
+    role: 'Primary Backend Framework',
+    description:
+      'High-performance asynchronous APIs, automatic OpenAPI/Swagger documentation, robust request validation via Pydantic, and modular dependency injection.',
+    highlights: ['AsyncIO & Starlette', 'Pydantic Validation', 'OpenAPI & Swagger', 'Dependency Injection', 'Microservices'],
+    badgeColor: 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300',
+  },
+  {
+    name: 'Express.js',
+    language: 'JavaScript / Node.js',
+    role: 'Primary Backend Framework',
+    description:
+      'Production-tested server-side development, custom middleware pipelines, asynchronous event handling, and high-throughput RESTful services.',
+    highlights: ['Node.js Runtime', 'Middleware Pipelines', 'RESTful Services', 'Async Event Loop', 'Scalable Routing'],
+    badgeColor: 'border-sky-500/30 bg-sky-500/10 text-sky-300',
+  },
+];
+
+// Backend Engineering Core Competencies
+export const backendSkills = [
+  { name: 'REST APIs', category: 'API Design & Protocols' },
+  { name: 'Socket.IO', category: 'Real-Time Communication' },
+  { name: 'PostgreSQL', category: 'Relational Database / SQL' },
+  { name: 'MongoDB', category: 'NoSQL Document Store' },
+  { name: 'Redis', category: 'In-Memory Cache & Key-Value' },
+  { name: 'JWT', category: 'Stateless Authentication' },
+  { name: 'OAuth 2.0', category: 'Delegated Authorization' },
+  { name: 'RBAC', category: 'Role-Based Access Control' },
+];
+
+// AI Engineering Skills (Presented as applied skills, not unsupported claims of expertise)
+export const aiEngineeringSkills = [
+  {
+    name: 'RAG',
+    label: 'Retrieval-Augmented Generation',
+    description: 'Context retrieval pipelines integrating vector search with generation workflows.',
+  },
+  {
+    name: 'Prompt Engineering',
+    label: 'Structured Prompt Design',
+    description: 'Systematic prompt templates, few-shot patterns, and chain-of-thought formulations.',
+  },
+  {
+    name: 'Prompt Evaluation',
+    label: 'Output Benchmarking',
+    description: 'Empirical testing, response validation, and regression monitoring across models.',
+  },
+  {
+    name: 'MCP',
+    label: 'Model Context Protocol',
+    description: 'Extending LLMs with standardized tools, resources, and live data connectors.',
+  },
+  {
+    name: 'LLM Integration',
+    label: 'API & Pipeline Engineering',
+    description: 'Production integration of foundation model APIs into backend services.',
+  },
+];
+
+// Programming Languages & DSA
+export const programmingLanguages = [
+  {
+    name: 'Java',
+    role: 'Data structures, algorithms, and OOP architecture',
+    isPrimary: true,
+  },
+  {
+    name: 'JavaScript',
+    role: 'Node.js server architectures & async event loops',
+    isPrimary: false,
+  },
+  {
+    name: 'TypeScript',
+    role: 'Typed backend services & compile-time safety',
+    isPrimary: false,
+  },
+  {
+    name: 'Python',
+    role: 'Backend APIs, data workflows, and AI tooling',
+    isPrimary: false,
+  },
+  {
+    name: 'C',
+    role: 'Memory management & low-level fundamentals',
+    isPrimary: false,
+  },
+];
+
+// Infrastructure & Tooling
+export const infrastructureTools = [
+  { name: 'Docker', category: 'Containerization' },
+  { name: 'Render', category: 'Cloud Deployment' },
+  { name: 'AWS S3', category: 'Cloud Object Storage' },
+  { name: 'Git', category: 'Version Control' },
+  { name: 'GitHub', category: 'Collaboration & CI/CD' },
+  { name: 'Postman', category: 'API Testing & Docs' },
+];
+
 export const techStackIcons = [
   {
     name: "React Developer",

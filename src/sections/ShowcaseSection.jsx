@@ -39,11 +39,8 @@ projects.forEach((card,index)=>{
     )
 
 })
-    gsap.fromTo
-    (sectionRef.current,
-        { opacity: 0},
-        {opacity:1 , duration:1.5})
-},[]);
+    gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1.5 });
+  }, []);
 
 
 

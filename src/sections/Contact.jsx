@@ -1,13 +1,13 @@
-import { useRef, useState, Suspense, lazy } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-
-const ContactExperience = lazy(() => import("../components/Models/contact/ContactExperience"));
+import DeveloperTerminal from "../components/DeveloperTerminal";
 
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState({ type: null, message: "" });
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -21,7 +21,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
+    setStatus({ type: null, message: "" });
 
     try {
       await emailjs.sendForm(
@@ -29,14 +30,22 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID || "template_nvkex9l",
         formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY || "ttVhgY3mgisyJMrxv"
-      )
+      );
 
-      // Reset form and stop loading
+      // Reset form and show success
       setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      setStatus({
+        type: "success",
+        message: "Thank you! Your message has been sent successfully. I will get back to you soon."
+      });
+    } catch {
+      // Preserve form values on error and display actionable feedback
+      setStatus({
+        type: "error",
+        message: "Failed to send message. Please try again or reach out directly at eharish3005@gmail.com."
+      });
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
@@ -94,8 +103,27 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit" disabled={loading}>
-                  <div className="cta-button group">
+                {status.message && (
+                  <div
+                    role="status"
+                    aria-live="polite"
+                    className={`p-3 rounded-lg text-sm font-medium border ${
+                      status.type === "success"
+                        ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-300"
+                        : "bg-red-500/10 border-red-500/30 text-red-300"
+                    }`}
+                  >
+                    {status.message}
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  aria-busy={loading}
+                  className="disabled:cursor-not-allowed"
+                >
+                  <div className={`cta-button group ${loading ? "opacity-75 cursor-not-allowed" : ""}`}>
                     <div className="bg-circle" />
                     <p className="text">
                       {loading ? "Sending..." : "Send Message"}
@@ -109,11 +137,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <Suspense fallback={<div className="text-white-50">Loading 3D...</div>}>
-                <ContactExperience />
-              </Suspense>
-            </div>
+            <DeveloperTerminal />
           </div>
         </div>
       </div>
